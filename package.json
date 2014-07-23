@@ -4,7 +4,8 @@
   "description": "City of Philadelphia crime data",
   "main": "index.js",
   "scripts": {
-    "import": "wget -P import/ -N http://gis.phila.gov/gisdata/police_inct.zip && unzip -o import/police_inct.zip -d import/ && cat import/police_inct.csv | dat import --csv --primary DC_KEY"
+    "import": "wget -P import/ -N http://gis.phila.gov/gisdata/police_inct.zip && unzip -o import/police_inct.zip -d import/ && cat import/police_inct.csv | dat import --csv --primary DC_KEY",
+    "start": "dat listen"
   },
   "repository": {
     "type": "git",
