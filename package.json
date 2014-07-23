@@ -1,0 +1,30 @@
+{
+  "name": "dat-phillycrime",
+  "version": "1.0.0",
+  "description": "City of Philadelphia crime data",
+  "main": "index.js",
+  "scripts": {
+    "import": "wget -P import/ -N http://gis.phila.gov/gisdata/police_inct.zip && unzip -o import/police_inct.zip -d import/ && cat import/police_inct.csv | dat import --csv --primary DC_KEY"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nathanbowser/dat-phillycrime.git"
+  },
+  "keywords": [
+    "dat",
+    "philadelphia",
+    "open",
+    "data",
+    "crime",
+    "data"
+  ],
+  "author": "Nathan Bowser <nathan.bowser@spiderstrategies.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathanbowser/dat-phillycrime/issues"
+  },
+  "homepage": "https://github.com/nathanbowser/dat-phillycrime",
+  "dependencies": {
+    "trim-object-stream": "^1.0.0"
+  }
+}
