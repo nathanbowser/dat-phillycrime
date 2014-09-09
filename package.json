@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/nathanbowser/dat-phillycrime",
   "dependencies": {
-    "dat": "^5.0.4"
+    "dat": "^6.0.4"
   }
 }
